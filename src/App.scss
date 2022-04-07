@@ -1,32 +1,70 @@
+// .App {
+//   gap: 10px;
+//   margin: 20px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   .card {
+//     width: calc(20% - 8px);
+//     @media screen and (max-width: 1200px) {
+//       width: calc(25% - 7.5px);
+//     }
+//     @media screen and (max-width: 992px) {
+//       width: calc(33.33% - 6.67px);
+//     }
+//     @media screen and (max-width: 576px) {
+//       width: calc(50% - 10px);
+//     }
+//     @media screen and (max-width: 360px) {
+//       width: 100%;
+//     }
+//     cursor: pointer;
+//     .img-dev {
+//       height: 0;
+//       position: relative;
+//       padding-bottom: 100%;
+//       img {
+//         left: 5%;
+//         width: 90%;
+//         position: absolute;
+//       }
+//     }
+//   }
+// }
+
+body {
+  margin: 0;
+  color: lightcoral;
+  background-color: lightcoral;
+}
+
 .App {
-  gap: 10px;
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  .card {
-    width: calc(20% - 8px);
-    @media screen and (max-width: 1200px) {
-      width: calc(25% - 7.5px);
-    }
-    @media screen and (max-width: 992px) {
-      width: calc(33.33% - 6.67px);
-    }
-    @media screen and (max-width: 576px) {
-      width: calc(50% - 10px);
-    }
-    @media screen and (max-width: 360px) {
-      width: 100%;
-    }
-    cursor: pointer;
-    .img-dev {
-      height: 0;
-      position: relative;
-      padding-bottom: 100%;
-      img {
-        left: 5%;
-        width: 90%;
-        position: absolute;
-      }
-    }
-  }
+  margin-top: 12px;
+  position: relative;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.note {
+  background-color: white;
+  border-radius: 4px;
+  margin: 8px;
+  width: 200px;
+  height: 250px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  transition: left 0.1s, top 0.1s, right 0.1s, box-shadow 0.2s;
+  touch-action: none;
+}
+
+.note:hover {
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hoverable:hover {
+  /* Not hoverable while dragging. Because of bug */
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ghost {
+  box-shadow: 0px 3px 26px 0px rgba(0, 0, 0, 0.3);
+  touch-action: none;
 }
