@@ -1,0 +1,32 @@
+.App {
+  gap: 10px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    width: calc(20% - 8px);
+    @media screen and (max-width: 1200px) {
+      width: calc(25% - 7.5px);
+    }
+    @media screen and (max-width: 992px) {
+      width: calc(33.33% - 6.67px);
+    }
+    @media screen and (max-width: 576px) {
+      width: calc(50% - 10px);
+    }
+    @media screen and (max-width: 360px) {
+      width: 100%;
+    }
+    cursor: pointer;
+    .img-dev {
+      height: 0;
+      position: relative;
+      padding-bottom: 100%;
+      img {
+        left: 5%;
+        width: 90%;
+        position: absolute;
+      }
+    }
+  }
+}
